@@ -23,6 +23,17 @@ $(document).ready(function () {
 		items: 1
 	});
 	
+	$('.single-prod-secondary-slider').owlCarousel({
+		loop: false,
+		margin: 0,
+		nav: true,
+		dots: false,
+		items: 4,
+		mouseDrag: false,
+		pullDrag: false,
+		touchDrag: false
+	});
+	
 	$('.product-slider').owlCarousel({
 		loop: true,
 		margin: 0,

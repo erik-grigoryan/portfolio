@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>FOS</title>
+    <link rel="stylesheet" href="./sources/styles/css/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-main-section">
+            <a href="#" class="logo">
+                <img src="./resources/images/logo.svg" alt=""/>
+            </a>
+            <button type="button" class="burger-button"><span></span>Open Category Menu</button>
+            <div class="search-block">
+                <label for="search" class="search-field-label">Որոնել</label>
+                <input autocomplete="off" id="search" type="text" class="search-field" placeholder="Որոնել"/>
+                <div class="search-result-block">
+                    <div class="search-result-row">
+                        <div class="search-result-col">
+                            <p class="search-result-col-title">Ապրանք / ծառայություն</p>
+                            <ul class="search-result-list">
+                                <li class="search-result-li"><a href="#">Կաթ</a></li>
+                                <li class="search-result-li"><a href="#">Կաթի սեր</a></li>
+                                <li class="search-result-li"><a href="#">Կաթնային թխվածք</a></li>
+                                <li class="search-result-li"><a href="#">Կահույք</a></li>
+                                <li class="search-result-li"><a href="#">Կաթնաշոռ</a></li>
+                                <li class="search-result-li"><a href="#">Կազմ</a></li>
+                                <li class="search-result-li"><a href="#">Կարտոֆիլ</a></li>
+                                <li class="search-result-li"><a href="#">Մակարոն</a></li>
+                                <li class="search-result-li"><a href="#">Կահույք</a></li>
+                            </ul>
+                        </div>
+                        <div class="search-result-col">
+                            <p class="search-result-col-title">Կատեգորիա</p>
+                            <ul class="search-result-list">
+                                <li class="search-result-li"><a href="#">Կաթնամթերք</a></li>
+                                <li class="search-result-li"><a href="#">Էլեկտրատեխնիկա</a></li>
+                                <li class="search-result-li"><a href="#">Կենցաղային տեխնիկա</a></li>
+                                <li class="search-result-li"><a href="#">Բժշկական սարքեր և աքսեսուարներ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="show-all-search-res" data-res-count="22">Ցուցադրել բոլորը</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-button-group">
+            <div class="header-action header-mob-search-button">
+                <button type="button" class="header-action-button">
+                    <i class="fs-icon-search"></i>
+                    Search
+                </button>
+            </div>
+            <div class="header-action user-block">
+                <button type="button" class="header-action-button">
+                    <i class="fs-icon-user"></i>
+                    Sign In
+                </button>
+                <div class="header-authorization-block">
+                    <h4 class="authorization-popover-title">Բարի գալուստ Fos.am</h4>
+                    <div class="authorization-popover-buttons">
+                        <a href="#" class="registration-button">Գրանցվել</a>
+                        <a href="#" class="login-button">Մուտք</a>
+                    </div>
+                </div>
+                <div class="header-user-block">
+                    <div class="header-user-block-header">
+                        <span class="header-user-abbreviation">ԼԱ</span>
+                        <h4 class="header-user-name">Լուսինե Աղաբեկյան</h4>
+                        <a href="mailto:lussin@gmail.com" class="header-user-email">lussin@gmail.com</a>
+                    </div>
+                    <div class="header-user-block-body">
+                        <a href="#" class="header-user-link">Անձնական էջ</a>
+                        <a href="#" class="header-user-link">Ելք համակարգից</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-action notification">
+                <button type="button" class="header-action-button">
+                    <i class="fs-icon-bell"></i>
+                    Notifications
+                </button>
+                <div class="header-notification-block">
+                    <div class="notification-header">
+                        <h2 class="notification-header-title">Ծանուցումներ</h2>
+                        <button type="button" class="notification-close-btn fs-icon-close"></button>
+                    </div>
+                    <div class="notification-action-block">
+                        <button type="button" class="show-unread">
+                            <i class="fs-icon-filter"></i>
+                            Ցույց տալ չկարդացածները
+                        </button>
+                        <button type="button" class="set-as-read">
+                            Նշել որպես կարդացած
+                        </button>
+                    </div>
+                    <div class="notification-tabs-row">
+                        <button type="button" class="notification-tab active">Զեղչ</button>
+                        <button type="button" class="notification-tab">Նոր</button>
+                    </div>
+                    <div class="notification-list">
+                        <div class="notification-li new-notification">
+                            <label class="notification-check">
+                                <input type="checkbox"/>
+                                <span class="notification-check-imitation fs-icon-check"></span>
+                            </label>
+                            <div class="notification-body">
+                                <img src="./resources/images/supplier.jpg" alt="#" class="notification-image"/>
+                                <div class="notification-info-block">
+                                    <p class="notification-info-title"><a href="#">Կազմակերպության անվանում</a> ունի նոր
+                                        ապրանքներ լոռեմ իպսում դոլոռ սիթ ամեթ, իդքուե ֆաբուլաս ինսթո իդքուե ֆաբուլաս
+                                        ինսթո</p>
+                                    <time class="notification-date">35 րոպե առաջ</time>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-li new-notification">
+                            <label class="notification-check">
+                                <input type="checkbox"/>
+                                <span class="notification-check-imitation fs-icon-check"></span>
+                            </label>
+                            <div class="notification-body">
+                                <img src="./resources/images/supplier.jpg" alt="#" class="notification-image"/>
+                                <div class="notification-info-block">
+                                    <p class="notification-info-title"><a href="#">Կազմակերպության անվանում</a> ունի նոր
+                                        ապրանքներ լոռեմ իպսում դոլոռ սիթ ամեթ, իդքուե ֆաբուլաս ինսթո իդքուե ֆաբուլաս
+                                        ինսթո</p>
+                                    <time class="notification-date">35 րոպե առաջ</time>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-li">
+                            <label class="notification-check">
+                                <input type="checkbox"/>
+                                <span class="notification-check-imitation fs-icon-check"></span>
+                            </label>
+                            <div class="notification-body">
+                                <img src="./resources/images/supplier.jpg" alt="#" class="notification-image"/>
+                                <div class="notification-info-block">
+                                    <p class="notification-info-title"><a href="#">Կազմակերպության անվանում</a> ունի նոր
+                                        ապրանքներ լոռեմ իպսում դոլոռ սիթ ամեթ, իդքուե ֆաբուլաս ինսթո իդքուե ֆաբուլաս
+                                        ինսթո</p>
+                                    <time class="notification-date">35 րոպե առաջ</time>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-li">
+                            <label class="notification-check">
+                                <input type="checkbox"/>
+                                <span class="notification-check-imitation fs-icon-check"></span>
+                            </label>
+                            <div class="notification-body">
+                                <img src="./resources/images/supplier.jpg" alt="#" class="notification-image"/>
+                                <div class="notification-info-block">
+                                    <p class="notification-info-title"><a href="#">Կազմակերպության անվանում</a> ունի նոր
+                                        ապրանքներ լոռեմ իպսում դոլոռ սիթ ամեթ, իդքուե ֆաբուլաս ինսթո իդքուե ֆաբուլաս
+                                        ինսթո</p>
+                                    <time class="notification-date">35 րոպե առաջ</time>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-li">
+                            <label class="notification-check">
+                                <input type="checkbox"/>
+                                <span class="notification-check-imitation fs-icon-check"></span>
+                            </label>
+                            <div class="notification-body">
+                                <img src="./resources/images/supplier.jpg" alt="#" class="notification-image"/>
+                                <div class="notification-info-block">
+                                    <p class="notification-info-title"><a href="#">Կազմակերպության անվանում</a> ունի նոր
+                                        ապրանքներ լոռեմ իպսում դոլոռ սիթ ամեթ, իդքուե ֆաբուլաս ինսթո իդքուե ֆաբուլաս
+                                        ինսթո</p>
+                                    <time class="notification-date">35 րոպե առաջ</time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="header-link favorite"><i class="fs-icon-heart"></i>Favorite Products</a>
+            <a href="#" class="header-link basket"><i class="fs-icon-basket"></i>Product Cart</a>
+            <div class="language-block">
+                <div class="selected-lang-block" tabindex="0">
+                    <img src="./resources/images/flag-arm.jpg" alt="#"/>
+                    <ul class="lang-variant-list">
+                        <li class="lang-variant">
+                            <img src="./resources/images/flag-arm.jpg" alt="#"/>
+                            <span>English</span>
+                        </li>
+                        <li class="lang-variant">
+                            <img src="./resources/images/flag-arm.jpg" alt="#"/>
+                            <span>Russian</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="page-breadcrumbs-wrapper">
+    <div class="container">
+        <ul class="page-breadcrumbs">
+            <li class="page-breadcrumbs-el"><a href="#">Գլխավոր էջ</a></li>
+            <li class="page-breadcrumbs-el">Lոռեմ իպսում դոլոռ</li>
+        </ul>
+    </div>
+</div>
+<div class="single-product-block">
+    <div class="container">
+        <div class="single-prod-col">
+            <div class="single-prod-image-block">
+                <div class="single-prod-secondary-images">
+                    <div class="single-prod-secondary-slider owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="single-prod-sec-image">
+                                <img src="./resources/images/large-image.jpg" alt="#"/>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="single-prod-sec-image">
+                                <img src="./resources/images/large-image.jpg" alt="#"/>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="single-prod-sec-image">
+                                <img src="./resources/images/large-image.jpg" alt="#"/>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="single-prod-sec-image">
+                                <img src="./resources/images/large-image.jpg" alt="#"/>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="single-prod-sec-image">
+                                <img src="./resources/images/large-image.jpg" alt="#"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-prod-main-image" data-new-label="Նոր" data-sale="-10%">
+                    <img src="./resources/images/large-image.jpg" alt="#"/>
+                    <span class="under-sale-message">Գնիր 2 հատ ստացիր լրացուցիչ 30% զեղչ</span>
+                </div>
+            </div>
+            <div class="single-product-description">
+                <h3 class="single-product-description-title">Նկարագրություն</h3>
+                <div class="single-product-description-content">
+                    <p>Լոռեմ իպսում դոլոռ սիթ ամեթ, լաբոռե լաթինե քուո եի. թե մեա եվեռթի ոծուռռեռեթ դեֆինիթիոնեմ, վեռի
+                        ֆաբուլաս ռաթիոնիբուս աթ մեի նե վեռի ֆաբուլաս վեռի ֆաբուլաս ռաթիոնիբուս աթ մեի նե վեռի
+                        ֆաբուլաս։</p>
+                    <p>Լոռեմ իպսում դոլոռ սիթ ամեթ, լաբոռե լաթինե քուո եի. թե մեա եվեռթի ոծուռռեռեթ դեֆինիթիոնեմ, վեռի
+                        ֆաբուլաս ռաթիոնիբուս աթ մեի նե վեռի ֆաբուլաս։</p>
+                </div>
+            </div>
+        </div>
+        <div class="single-prod-col">
+            <h1 class="single-prod-name">Լոռեմ իպսում դոլոռ սիթ ամեթ, լաբոռե լաթինե քուո եի լաբոռե լաթինե քուո եի</h1>
+            <dl class="single-prod-specifications">
+                <div class="single-prod-specification">
+                    <dt>Ապրանքի կոդ</dt>
+                    <dd>000001</dd>
+                </div>
+                <div class="single-prod-specification">
+                    <dt>Մատակարար</dt>
+                    <dd>Զիգզագ</dd>
+                </div>
+            </dl>
+            <div class="single-prod-price-block">
+                <p class="single-prod-current-price">800 000 դր/հատ</p>
+                <p class="single-prod-old-price" data-label="(Գինը չի ներառում հարկերը)"><span>8 000 000 դրամ/հատ</span>
+                </p>
+            </div>
+            <div class="single-prod-customization">
+                <div class="single-prod-customization-section">
+                    <p class="single-prod-customization-selected-title" data-title="Գույնը">Կարմիր</p>
+                    <ul class="single-prod-customization-image-list">
+                        <li class="single-prod-customization-image-li">
+                            <label>
+                                <input type="radio" name="color" value="black" checked/>
+                                <img src="./resources/images/large-image.jpg" alt=""/>
+                            </label>
+                        </li>
+                        <li class="single-prod-customization-image-li">
+                            <label>
+                                <input type="radio" name="color" value="white"/>
+                                <img src="./resources/images/large-image.jpg" alt=""/>
+                            </label>
+                        </li>
+                        <li class="single-prod-customization-image-li">
+                            <label>
+                                <input type="radio" name="color" value="red"/>
+                                <img src="./resources/images/large-image.jpg" alt=""/>
+                            </label>
+                        </li>
+                        <li class="single-prod-customization-image-li">
+                            <label>
+                                <input type="radio" name="color" value="gray"/>
+                                <img src="./resources/images/large-image.jpg" alt=""/>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="single-prod-customization-section">
+                    <p class="single-prod-customization-selected-title" data-title="Ապրանքանիշ">Genius</p>
+                    <ul class="single-prod-customization-variant-list">
+                        <li class="single-prod-customization-variant-li">
+                            <label>
+                                <input type="radio" name="brand" value="genius" checked/>
+                                <span>Genius</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="single-prod-customization-section">
+                    <p class="single-prod-customization-selected-title" data-title="Արտադրման երկիր">Չինաստան</p>
+                    <ul class="single-prod-customization-variant-list">
+                        <li class="single-prod-customization-variant-li">
+                            <label>
+                                <input type="radio" name="country" value="china" checked/>
+                                <span>Չինաստան</span>
+                            </label>
+                        </li>
+                        <li class="single-prod-customization-variant-li">
+                            <label>
+                                <input type="radio" name="country" value="thai"/>
+                                <span>Թայլանդ</span>
+                            </label>
+                        </li>
+                        <li class="single-prod-customization-variant-li">
+                            <label>
+                                <input type="radio" name="country" value="japan"/>
+                                <span>Ճապոնիա</span>
+                            </label>
+                        </li>
+                        <li class="single-prod-customization-variant-li">
+                            <label>
+                                <input type="radio" name="country" value="usa"/>
+                                <span>ԱՄՆ</span>
+                            </label>
+                        </li>
+                        <li class="single-prod-customization-variant-li">
+                            <label>
+                                <input type="radio" name="country" value="armenia"/>
+                                <span>Հայաստան</span>
+                            </label>
+                        </li>
+                        <li class="single-prod-customization-variant-li">
+                            <label>
+                                <input type="radio" name="country" value="india"/>
+                                <span>Հնդկաստան</span>
+                            </label>
+                        </li>
+                        <li class="single-prod-customization-variant-li">
+                            <label>
+                                <input type="radio" name="country" value="germany"/>
+                                <span>Գերմանիա</span>
+                            </label>
+                        </li>
+                        <li class="single-prod-customization-variant-li">
+                            <label>
+                                <input type="radio" name="country" value="france"/>
+                                <span>Ֆրանսիա</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="single-prod-customization-section">
+                    <p class="single-prod-customization-selected-title" data-title="Միացման տեսակը">Անլար</p>
+                    <ul class="single-prod-customization-variant-list">
+                        <li class="single-prod-customization-variant-li">
+                            <label>
+                                <input type="radio" name="connect-type" value="wireless" checked/>
+                                <span>Անլար</span>
+                            </label>
+                        </li>
+                        <li class="single-prod-customization-variant-li">
+                            <label>
+                                <input type="radio" name="connect-type" value="wire"/>
+                                <span>Լարով</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="single-prod-counting">
+                <p class="single-prod-count-title">Քանակ</p>
+                <div class="single-prod-counting-block">
+                    <div class="single-prod-counter">
+                        <button type="button" class="" data-role="minus">
+                            <i class="fs-icon-minus"></i>
+                        </button>
+                        <label class="product-card-count-num">
+                            <input type="number" value="1"/>
+                        </label>
+                        <button type="button" class="" data-role="minus">
+                            <i class="fs-icon-plus"></i>
+                        </button>
+                    </div>
+                    <p class="single-prod-count-price" data-result="Ընդամենը՝ ">800 000 դր</p>
+                </div>
+            </div>
+            <div class="single-prod-action-row">
+                <button type="button" class="single-prod-to-cart">Ավելացնել զամբյուղ <i class="fs-icon-basket"></i></button>
+                <button type="button" class="single-prod-to-fav fs-icon-heart"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="home-page-section">
+    <div class="container">
+        <h2 class="home-page-section-title">Նմանատիպ ապրանքներ</h2>
+        <div class="home-page-section-body">
+            <div class="product-slider owl-carousel owl-theme">
+                <div class="item">
+                    <div class="product-slider-el">
+                        <div class="product-card new-product" data-new-label="Նոր" data-sale="90%">
+                            <div class="product-card-image">
+                                <a href="#" class="product-card-link">
+                                    <img src="./resources/images/product-image1.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-card-fast-call">Դիտել</button>
+                            </div>
+                            <div class="product-card-body">
+                                <h4 class="product-card-title">
+                                    <a href="#">Ապրանքի անվանում լոռեմ իպսում դոլա լոռեմ իպսում դոլա</a>
+                                </h4>
+                                <button type="button" class="product-card-add-to-fav">
+                                    <i class="fs-icon-heart"></i>
+                                </button>
+                                <p class="product-card-supplier">
+                                    <a href="#">Կազմակերպության անվանում ազմակերպության</a>
+                                </p>
+                                <span class="product-card-current-price">800 000 դր/հատ</span>
+                                <span class="product-card-old-price">8 000 000 դր/հատ</span>
+                                <div class="product-card-action-row">
+                                    <div class="product-card-count-block">
+                                        <div class="product-card-count-block-inner">
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-minus"></i>
+                                            </button>
+                                            <label class="product-card-count-num">
+                                                <input type="number" value="1"/>
+                                            </label>
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card-add-to-cart">
+                                        <span class="product-card-add-to-cart-label">Զամբյուղ</span>
+                                        <i class="fs-icon-basket"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product-slider-el">
+                        <div class="product-card">
+                            <div class="product-card-image">
+                                <a href="#" class="product-card-link">
+                                    <img src="./resources/images/product-image2.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-card-fast-call">Դիտել</button>
+                            </div>
+                            <div class="product-card-body">
+                                <h4 class="product-card-title">
+                                    <a href="#">Ապրանքի անվանում լոռեմ իպսում դոլա լոռեմ իպսում դոլա</a>
+                                </h4>
+                                <button type="button" class="product-card-add-to-fav">
+                                    <i class="fs-icon-heart"></i>
+                                </button>
+                                <p class="product-card-supplier">
+                                    <a href="#">Կազմակերպության անվանում ազմակերպության</a>
+                                </p>
+                                <span class="product-card-current-price">800 000 դր/հատ</span>
+                                <span class="product-card-old-price">8 000 000 դր/հատ</span>
+                                <div class="product-card-action-row">
+                                    <div class="product-card-count-block">
+                                        <div class="product-card-count-block-inner">
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-minus"></i>
+                                            </button>
+                                            <label class="product-card-count-num">
+                                                <input type="number" value="1"/>
+                                            </label>
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card-add-to-cart">
+                                        <i class="fs-icon-basket"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product-slider-el">
+                        <div class="product-card new-product" data-new-label="Նոր" data-sale="90%">
+                            <div class="product-card-image">
+                                <a href="#" class="product-card-link">
+                                    <img src="./resources/images/product-image3.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-card-fast-call">Դիտել</button>
+                            </div>
+                            <div class="product-card-body">
+                                <h4 class="product-card-title">
+                                    <a href="#">Ապրանքի անվանում լոռեմ իպսում դոլա լոռեմ իպսում դոլա</a>
+                                </h4>
+                                <button type="button" class="product-card-add-to-fav">
+                                    <i class="fs-icon-heart"></i>
+                                </button>
+                                <p class="product-card-supplier">
+                                    <a href="#">Կազմակերպության անվանում ազմակերպության</a>
+                                </p>
+                                <span class="product-card-current-price">800 000 դր/հատ</span>
+                                <span class="product-card-old-price">8 000 000 դր/հատ</span>
+                                <div class="product-card-action-row">
+                                    <div class="product-card-count-block">
+                                        <div class="product-card-count-block-inner">
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-minus"></i>
+                                            </button>
+                                            <label class="product-card-count-num">
+                                                <input type="number" value="1"/>
+                                            </label>
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card-add-to-cart">
+                                        <i class="fs-icon-basket"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product-slider-el">
+                        <div class="product-card new-product" data-new-label="Նոր" data-sale="90%">
+                            <div class="product-card-image">
+                                <a href="#" class="product-card-link">
+                                    <img src="./resources/images/product-image4.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-card-fast-call">Դիտել</button>
+                            </div>
+                            <div class="product-card-body">
+                                <h4 class="product-card-title">
+                                    <a href="#">Ապրանքի անվանում լոռեմ իպսում դոլա լոռեմ իպսում դոլա</a>
+                                </h4>
+                                <button type="button" class="product-card-add-to-fav">
+                                    <i class="fs-icon-heart"></i>
+                                </button>
+                                <p class="product-card-supplier">
+                                    <a href="#">Կազմակերպության անվանում ազմակերպության</a>
+                                </p>
+                                <span class="product-card-current-price">800 000 դր/հատ</span>
+                                <span class="product-card-old-price">8 000 000 դր/հատ</span>
+                                <div class="product-card-action-row">
+                                    <div class="product-card-count-block">
+                                        <div class="product-card-count-block-inner">
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-minus"></i>
+                                            </button>
+                                            <label class="product-card-count-num">
+                                                <input type="number" value="1"/>
+                                            </label>
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card-add-to-cart">
+                                        <i class="fs-icon-basket"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product-slider-el">
+                        <div class="product-card new-product" data-new-label="Նոր" data-sale="90%">
+                            <div class="product-card-image">
+                                <a href="#" class="product-card-link">
+                                    <img src="./resources/images/product-image5.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-card-fast-call">Դիտել</button>
+                            </div>
+                            <div class="product-card-body">
+                                <h4 class="product-card-title">
+                                    <a href="#">Ապրանքի անվանում լոռեմ իպսում դոլա լոռեմ իպսում դոլա</a>
+                                </h4>
+                                <button type="button" class="product-card-add-to-fav">
+                                    <i class="fs-icon-heart"></i>
+                                </button>
+                                <p class="product-card-supplier">
+                                    <a href="#">Կազմակերպության անվանում ազմակերպության</a>
+                                </p>
+                                <span class="product-card-current-price">800 000 դր/հատ</span>
+                                <span class="product-card-old-price">8 000 000 դր/հատ</span>
+                                <div class="product-card-action-row">
+                                    <div class="product-card-count-block">
+                                        <div class="product-card-count-block-inner">
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-minus"></i>
+                                            </button>
+                                            <label class="product-card-count-num">
+                                                <input type="number" value="1"/>
+                                            </label>
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card-add-to-cart">
+                                        <i class="fs-icon-basket"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product-slider-el">
+                        <div class="product-card new-product" data-new-label="Նոր" data-sale="90%">
+                            <div class="product-card-image">
+                                <a href="#" class="product-card-link">
+                                    <img src="./resources/images/product-image6.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-card-fast-call">Դիտել</button>
+                            </div>
+                            <div class="product-card-body">
+                                <h4 class="product-card-title">
+                                    <a href="#">Ապրանքի անվանում լոռեմ իպսում դոլա լոռեմ իպսում դոլա</a>
+                                </h4>
+                                <button type="button" class="product-card-add-to-fav">
+                                    <i class="fs-icon-heart"></i>
+                                </button>
+                                <p class="product-card-supplier">
+                                    <a href="#">Կազմակերպության անվանում ազմակերպության</a>
+                                </p>
+                                <span class="product-card-current-price">800 000 դր/հատ</span>
+                                <span class="product-card-old-price">8 000 000 դր/հատ</span>
+                                <div class="product-card-action-row">
+                                    <div class="product-card-count-block">
+                                        <div class="product-card-count-block-inner">
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-minus"></i>
+                                            </button>
+                                            <label class="product-card-count-num">
+                                                <input type="number" value="1"/>
+                                            </label>
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card-add-to-cart">
+                                        <i class="fs-icon-basket"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product-slider-el">
+                        <div class="product-card new-product" data-new-label="Նոր" data-sale="90%">
+                            <div class="product-card-image">
+                                <a href="#" class="product-card-link">
+                                    <img src="./resources/images/product-image1.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-card-fast-call">Դիտել</button>
+                            </div>
+                            <div class="product-card-body">
+                                <h4 class="product-card-title">
+                                    <a href="#">Ապրանքի անվանում լոռեմ իպսում դոլա լոռեմ իպսում դոլա</a>
+                                </h4>
+                                <button type="button" class="product-card-add-to-fav">
+                                    <i class="fs-icon-heart"></i>
+                                </button>
+                                <p class="product-card-supplier">
+                                    <a href="#">Կազմակերպության անվանում ազմակերպության</a>
+                                </p>
+                                <span class="product-card-current-price">800 000 դր/հատ</span>
+                                <span class="product-card-old-price">8 000 000 դր/հատ</span>
+                                <div class="product-card-action-row">
+                                    <div class="product-card-count-block">
+                                        <div class="product-card-count-block-inner">
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-minus"></i>
+                                            </button>
+                                            <label class="product-card-count-num">
+                                                <input type="number" value="1"/>
+                                            </label>
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card-add-to-cart">
+                                        <i class="fs-icon-basket"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product-slider-el">
+                        <div class="product-card new-product" data-new-label="Նոր" data-sale="90%">
+                            <div class="product-card-image">
+                                <a href="#" class="product-card-link">
+                                    <img src="./resources/images/product-image2.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-card-fast-call">Դիտել</button>
+                            </div>
+                            <div class="product-card-body">
+                                <h4 class="product-card-title">
+                                    <a href="#">Ապրանքի անվանում լոռեմ իպսում դոլա լոռեմ իպսում դոլա</a>
+                                </h4>
+                                <button type="button" class="product-card-add-to-fav">
+                                    <i class="fs-icon-heart"></i>
+                                </button>
+                                <p class="product-card-supplier">
+                                    <a href="#">Կազմակերպության անվանում ազմակերպության</a>
+                                </p>
+                                <span class="product-card-current-price">800 000 դր/հատ</span>
+                                <span class="product-card-old-price">8 000 000 դր/հատ</span>
+                                <div class="product-card-action-row">
+                                    <div class="product-card-count-block">
+                                        <div class="product-card-count-block-inner">
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-minus"></i>
+                                            </button>
+                                            <label class="product-card-count-num">
+                                                <input type="number" value="1"/>
+                                            </label>
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card-add-to-cart">
+                                        <i class="fs-icon-basket"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product-slider-el">
+                        <div class="product-card new-product" data-new-label="Նոր" data-sale="90%">
+                            <div class="product-card-image">
+                                <a href="#" class="product-card-link">
+                                    <img src="./resources/images/product-image3.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-card-fast-call">Դիտել</button>
+                            </div>
+                            <div class="product-card-body">
+                                <h4 class="product-card-title">
+                                    <a href="#">Ապրանքի անվանում լոռեմ իպսում դոլա լոռեմ իպսում դոլա</a>
+                                </h4>
+                                <button type="button" class="product-card-add-to-fav">
+                                    <i class="fs-icon-heart"></i>
+                                </button>
+                                <p class="product-card-supplier">
+                                    <a href="#">Կազմակերպության անվանում ազմակերպության</a>
+                                </p>
+                                <span class="product-card-current-price">800 000 դր/հատ</span>
+                                <span class="product-card-old-price">8 000 000 դր/հատ</span>
+                                <div class="product-card-action-row">
+                                    <div class="product-card-count-block">
+                                        <div class="product-card-count-block-inner">
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-minus"></i>
+                                            </button>
+                                            <label class="product-card-count-num">
+                                                <input type="number" value="1"/>
+                                            </label>
+                                            <button type="button" class="" data-role="minus">
+                                                <i class="fs-icon-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card-add-to-cart">
+                                        <i class="fs-icon-basket"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-main-part">
+        <div class="container">
+            <div class="footer-navigation-column">
+                <div class="footer-brand-col">
+                    <img src="./resources/images/logo.svg" alt=""/>
+                    <p class="footer-copyright">Copyright © 2022 Fos.am</p>
+                </div>
+                <div class="footer-nav-column">
+                    <h5 class="footer-nav-col-title">Մեր մասին</h5>
+                    <ul class="footer-nav-col-list">
+                        <li class="footer-nav-el">
+                            <a href="#">Ինչ է Fos.am-ը</a>
+                        </li>
+                        <li class="footer-nav-el">
+                            <a href="#">Ինչպես պատվիրել</a>
+                        </li>
+                        <li class="footer-nav-el">
+                            <a href="#">Կապ մեզ հետ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h5 class="footer-nav-col-title">Գործընկերներին</h5>
+                    <ul class="footer-nav-col-list">
+                        <li class="footer-nav-el">
+                            <a href="#">Դառնալ Մատակարար</a>
+                        </li>
+                        <li class="footer-nav-el">
+                            <a href="#">Դառնալ Գնորդ</a>
+                        </li>
+                        <li class="footer-nav-el">
+                            <a href="#">Կազմակերպություններ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h5 class="footer-nav-col-title">Կոնտակտային տվյալներ</h5>
+                    <ul class="footer-nav-col-list">
+                        <li class="footer-nav-el">
+                            <a href="#">Հասցե</a>
+                        </li>
+                        <li class="footer-nav-el">
+                            <a href="#">Հեռախոսահամար</a>
+                        </li>
+                        <li class="footer-nav-el">
+                            <a href="#">Էլեկտրոնային հասցե</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-info-expert-column">
+                <img class="info-expert-logo" src="./resources/images/info-expert.svg" alt=""/>
+                <a class="info-expert-link" href="#">Հատուկ գործընկեր</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-panel">
+        <div class="container">
+            <ul class="footer-social-links">
+                <li class="footer-social-icon">
+                    <a href="#" class="fs-icon-facebook"></a>
+                </li>
+                <li class="footer-social-icon">
+                    <a href="#" class="fs-icon-instagram"></a>
+                </li>
+                <li class="footer-social-icon">
+                    <a href="#" class="fs-icon-linkedin"></a>
+                </li>
+            </ul>
+            <a href="#" class="privacy-policy">Գաղտնիության քաղաքականություն</a>
+        </div>
+    </div>
+</div>
+<script src="./sources/scripts/libraries/jquery-3.6.1.min.js"></script>
+<script src="./sources/scripts/libraries/owl.carousel.min.js"></script>
+<script src="./sources/scripts/script.js"></script>
+</body>
+</html>

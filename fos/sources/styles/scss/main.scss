@@ -10,6 +10,7 @@
 @import "./components/navigation-row";
 @import "./components/hero-slider";
 @import "./components/product-card";
+@import "./components/breadcrumbs";
 
 // Template Parts
 @import "./components/template_parts/header";
@@ -17,3 +18,4 @@
 
 // Pages
 @import "./pages/home";
+@import "./pages/single";

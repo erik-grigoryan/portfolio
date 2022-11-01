@@ -1,0 +1,40 @@
+.page-breadcrumbs-wrapper {
+  width: 100%;
+}
+
+.page-breadcrumbs {
+  width: 100%;
+  padding-top: 2.4rem;
+  padding-bottom: 3.2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .page-breadcrumbs-el {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: #4a4640;
+
+    a {
+      font-weight: 500;
+      color: #9b958c;
+    }
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -0.7rem;
+        transform: translateY(-50%);
+        width: 0.1rem;
+        height: 1rem;
+        background-color: #9b958c;
+      }
+    }
+  }
+}
