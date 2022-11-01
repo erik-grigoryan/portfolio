@@ -1,0 +1,19 @@
+@import "./fonts";
+@import "./variables";
+@import "./reset";
+
+// Libraries
+@import "./libraries/owl.carousel.min";
+@import "./libraries/owl.theme.default.min";
+
+// Components
+@import "./components/navigation-row";
+@import "./components/hero-slider";
+@import "./components/product-card";
+
+// Template Parts
+@import "./components/template_parts/header";
+@import "./components/template_parts/footer";
+
+// Pages
+@import "./pages/home";
