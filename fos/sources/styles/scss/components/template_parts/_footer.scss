@@ -75,6 +75,11 @@
           font-size: 1.4rem;
           line-height: 2.2rem;
           color: #9b958c;
+          transition: color 240ms;
+
+          &:hover {
+            color: rgba(255, 255, 255, 0.7)
+          }
         }
 
         &:not(:last-child) {
@@ -141,6 +146,11 @@
         height: 100%;
         font-size: 1.6rem;
         color: #9b958c;
+        transition: color 240ms;
+
+        &:hover {
+          color: rgba(255, 255, 255, 0.7);
+        }
       }
     }
   }
@@ -152,4 +162,124 @@
   line-height: 2.2rem;
   text-align: right;
   color: #9b958c;
+  transition: color 240ms;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-navigation-column {
+    flex-wrap: wrap;
+
+    .footer-brand-col {
+      width: 33.9rem;
+      padding-top: 0;
+    }
+
+    .footer-nav-column {
+      width: 21.8rem;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  .footer-info-expert-column {
+    position: absolute;
+    right: 4rem;
+    bottom: 2.3rem;
+  }
+
+  .footer-bottom-panel {
+    height: 5.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-navigation-column {
+    .footer-brand-col {
+      width: 24.2rem;
+    }
+
+    .footer-nav-column:not(:last-child) {
+      width: 15.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-navigation-column {
+    .footer-brand-col {
+      margin-bottom: 2.5rem;
+
+      img {
+        width: 6.4rem;
+        height: 3.2rem;
+      }
+    }
+
+    .footer-nav-column {
+      margin-bottom: 1.3rem;
+      margin-right: 0;
+      width: 100%;
+
+      &:not(:last-child) {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .footer-nav-col-title {
+        margin-bottom: 1.3rem;
+        padding-right: 3.6rem;
+        position: relative;
+
+        &.active:after {
+          transform: translateY(-50%) rotateZ(180deg);
+        }
+
+        &:after {
+          font-family: 'FOS-Icons', sans-serif !important;
+          content: "\e903";
+          position: absolute;
+          top: 50%;
+          right: 0.8rem;
+          transform: translateY(-50%);
+          font-size: 0.8rem;
+          color: #d7d4d1;
+          transition: transform 240ms;
+        }
+      }
+
+      .footer-nav-col-list {
+        padding-bottom: 1.3rem;
+      }
+    }
+  }
+
+  .footer-main-part {
+    padding-bottom: 10.9rem;
+  }
+
+  .footer-info-expert-column {
+    .info-expert-logo {
+      width: 7.6rem;
+      height: 4.8rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  .footer-nav-col-list {
+    display: none;
+  }
+
+  .footer-bottom-panel {
+    height: 9rem;
+
+    .container {
+      flex-direction: column;
+      padding-top: 1.7rem;
+      padding-bottom: 1.5rem;
+      align-items: flex-start;
+    }
+  }
 }

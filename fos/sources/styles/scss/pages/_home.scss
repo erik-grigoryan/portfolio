@@ -163,30 +163,6 @@
     padding-top: 4.8rem;
     padding-bottom: 4.8rem;
   }
-
-  .footer-navigation-column {
-    flex-wrap: wrap;
-
-    .footer-brand-col {
-      width: 33.9rem;
-      padding-top: 0;
-    }
-
-    .footer-nav-column {
-      width: 21.8rem;
-      margin-bottom: 2.4rem;
-    }
-  }
-
-  .footer-info-expert-column {
-    position: absolute;
-    right: 4rem;
-    bottom: 2.3rem;
-  }
-
-  .footer-bottom-panel {
-    height: 5.6rem;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -218,16 +194,6 @@
 
   .join-fos .container {
     padding-bottom: 7.2rem;
-  }
-
-  .footer-navigation-column {
-    .footer-brand-col {
-      width: 24.2rem;
-    }
-
-    .footer-nav-column:not(:last-child) {
-      width: 15.4rem;
-    }
   }
 }
 

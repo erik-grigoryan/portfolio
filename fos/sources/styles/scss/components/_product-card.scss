@@ -52,7 +52,7 @@
       width: 4rem;
       height: 4rem;
       z-index: 1;
-      background-image: url("./../../../../resources/images/new-prod-shape.png");
+      background-image: url("./../../../resources/images/new-prod-shape.png");
       background-size: contain;
       background-position: 50% 50%;
       display: flex;
@@ -213,6 +213,16 @@
   border: none;
   outline: none;
   cursor: pointer;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+  backface-visibility: hidden;
+  transition: box-shadow 240ms, transform 240ms cubic-bezier(0,1.38,.41,2);
+
+  &:hover {
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.2);
+    transform: scale3d(1.05, 1.05, 1) rotateZ(0.02deg) translateZ(0);
+  }
 }
 
 .product-card-count-block-inner {
